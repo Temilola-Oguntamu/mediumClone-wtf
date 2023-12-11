@@ -77,7 +77,18 @@ galleryForm.addEventListener('submit',  (event) => {
 
   imageList.push(imgObj)
   addNewImage()
-})
+});
 
 
 fillGallery();
+ 
+     
+       const removeImage = document.querySelector(".removeImageBtnWrapper");
+       removeImage.addEventListener("click", () => {
+       const firstlistitem = gallery.firstElementChild;
+        if (firstlistitem){
+          gallery.removeChild(firstlistitem)
+        }
+      }
+     );
+//const deleteItem = removeImage.splice(0,1);
