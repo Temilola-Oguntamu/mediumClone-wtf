@@ -91,4 +91,3 @@ fillGallery();
         }
       }
      );
-//const deleteItem = removeImage.splice(0,1);
